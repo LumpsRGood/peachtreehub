@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Peachtree App Launchpad</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .card-shadow {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    .btn-hover {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-hover:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body class="text-slate-900">
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-14 items-center">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded flex items-center justify-center text-white bg-black">
+            <span class="text-lg font-bold text-white leading-none">P</span>
+          </div>
+          <span class="font-bold text-slate-800 tracking-tight">Peachtree Tools</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a class="text-sm font-medium text-emerald-600 border-b-2 border-emerald-600 pb-4 pt-4 mt-1" href="#">Launchpad</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <header class="mb-12">
+      <h1 class="text-3xl font-bold text-slate-900 mb-2">Peachtree Ops Launchpad</h1>
+      <p class="text-slate-600 text-lg max-w-2xl">
+        Access your Streamlit reporting tools in one place without digging through bookmarks like a raccoon in a junk drawer.
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl overflow-hidden card-shadow flex flex-col border-t-4 border-blue-500 hover:shadow-lg transition-shadow bg-blue-50/10">
+        <div class="p-6 flex-grow">
+          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-3xl">analytics</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 mb-1">Combined Performance</h2>
+          <p class="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-3">Performance Dashboard</p>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Previous day server tablets, true turns, and dine-in beverages in one combined view.
+          </p>
+        </div>
+        <div class="p-6 pt-0 mt-auto">
+          <a
+            class="btn-hover inline-flex items-center justify-center w-full px-4 py-3 bg-slate-900 text-white font-semibold rounded-lg text-sm group"
+            href="https://peachtree-performance-dash.streamlit.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Dashboard
+            <span class="material-symbols-outlined ml-2 text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden card-shadow flex flex-col border-t-4 border-amber-500 hover:shadow-lg transition-shadow bg-amber-50/10">
+        <div class="p-6 flex-grow">
+          <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-3xl">sync_alt</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 mb-1">True Turns</h2>
+          <p class="text-xs font-semibold text-amber-600 uppercase tracking-wider mb-3">Server Rankings</p>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Dedicated multi-day true server rankings for spotting pace, trends, and movement over time.
+          </p>
+        </div>
+        <div class="p-6 pt-0 mt-auto">
+          <a
+            class="btn-hover inline-flex items-center justify-center w-full px-4 py-3 bg-slate-900 text-white font-semibold rounded-lg text-sm group"
+            href="https://peachtree-turns.streamlit.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open True Turns
+            <span class="material-symbols-outlined ml-2 text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden card-shadow flex flex-col border-t-4 border-indigo-600 hover:shadow-lg transition-shadow bg-indigo-50/10">
+        <div class="p-6 flex-grow">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-3xl">tablet_mac</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 mb-1">Tablet Use</h2>
+          <p class="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-3">Daily Rankings</p>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Single day tablet use server rankings when you need a quick look without dragging out the whole toolbox.
+          </p>
+        </div>
+        <div class="p-6 pt-0 mt-auto">
+          <a
+            class="btn-hover inline-flex items-center justify-center w-full px-4 py-3 bg-slate-900 text-white font-semibold rounded-lg text-sm group"
+            href="https://peachtreetablets.streamlit.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Tablet Use
+            <span class="material-symbols-outlined ml-2 text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-20 pt-8 border-t border-slate-200">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+        <p>© 2026 Peachtree Regional Operations. Internal use.</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
